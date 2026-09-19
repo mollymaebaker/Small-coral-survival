@@ -1,7 +1,7 @@
 # Marine heatwaves reshape survival of small corals, revealing size- and taxa-specific vulnerabilities
 
 ## Overview
-This repository provides survival data for over 3000 small coral colonies (<10 cm) across multiple eastern Indian Ocean reefs (Ningaloo, Mermaid, Scott and Ashmore reefs), taxa (mostly Acropora, Isopora, Pocillopora, Goniastrea and Porites), sizes (0.3 - 10 cm) and levels of heat stress and bleaching (background conditions, a moderate bleaching event, and severe bleaching event).
+This repository provides survival data for over 3,000 small coral colonies (<10 cm) across multiple eastern Indian Ocean reefs (Ningaloo, Mermaid, Scott and Ashmore reefs), taxa (mostly Acropora, Isopora, Pocillopora, Goniastrea and Porites), sizes (0.3 - 10 cm) and levels of heat stress and bleaching (background conditions, a moderate bleaching event, and severe bleaching event).
 
 These data were analysed, and the results were presented in the paper 'Marine heatwaves reshape survival of small corals, revealing size- and taxa-specific vulnerabilities.'
 
@@ -41,7 +41,7 @@ In the 'data' folder you will find seperate csv files for each reef and montiori
    
    Montioring dates: 2006-2007, 2007-2008, 2008-2009 (i.e., three one year monitoring periods).
    
-   Taxa: Acropora spp. and Goniastrea spp. (only monitored from 2008-2009)
+   Taxa: Acropora spicifera (2006-2009) and Goniastrea spp. (only monitored from 2008-2009)
    
    Level of heat stress: background conditions
 
@@ -66,16 +66,16 @@ In the 'data' folder you will find seperate csv files for each reef and montiori
    Level of heat stress: severe bleaching event
    
 Each csv file contains the following columns:
-- Date: Date the colony was first tagged (initial survey / baseline).
+- Date: The date the colony was first tagged (initial survey / baseline).
 - Site: Reef site where the colony was tagged.
-- Plot: Plot within the site.
+- Plot: Plot number within a site.
 - Tag: Physical tag identifier within a plot.
 - ID: Unique identifier for colonies surrounding each tag.
 - Size_x: Maximum diameter (cm) at the beginning of the monitoring period (T1_Size_x for Mermaid T2).
 - T1_Date OR T2_Date: Date of re-survey.
 - T1_Survival OR T2_Survival: Survival outcome of each resurvey (1 = survived, died = 0).
 - Taxa OR Taxa_broad: Coral taxa.
-- Site_Plot: Nested spatial grouping variable (Site + Plot combined). Useful for hierarchical modelling.
+- Site_Plot: Nested spatial grouping variable (Site + Plot combined). Useful for Bayesian hierarchical modelling.
 
 NOTE: Rather date columns the 'Scott_postrecrutiment_survival.csv' has the column 'year' which represents the montioring period e.g., 6-7 corresponds to 2006-2007.
 
